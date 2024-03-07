@@ -1,0 +1,11 @@
+version: "3.8"
+
+name: "pgvector"
+services:
+  pgvector:
+    extends:
+      file: ./docker-compose-pgvector.yml
+      service: pgvector
+
+volumes:
+  pgvector_data:
